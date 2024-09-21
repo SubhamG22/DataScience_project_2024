@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='all_result.css') }}">
+
+{% if prediction %}
+<div class="heading"><h1>The forecasted crop for your selection is:</h1>
+</div>
+<div class="prediction-result">
+    <p>{{ prediction | upper }}</p>
+</div>
+{% endif %}
+{% endblock %}

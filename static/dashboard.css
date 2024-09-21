@@ -1,0 +1,567 @@
+/*
+  Note: These are temporary previews of the images. 
+  They're active for 10-15 days only. You should replace them with the actual images before using the code in production.
+*/
+:root {
+    --image-0: url(../static/graphics0.png);
+    --image-1: url(../static/graphics1.png);
+    --image-2: url(../static/graphics2.png);
+    --custom-width: 100vw;
+    --design-width: 1280;
+    --ratio: calc(var(--custom-width) / var(--design-width));
+  }
+  
+  /* Default classes */
+  .pos-abs {
+    position: absolute;
+  }
+  .fill-parent {
+    width: 100%;
+    height: 100%;
+  }
+  .bg-contain {
+    background-size: contain;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-auto {
+    background-size: auto;
+  }
+  .bg-crop {
+    background-size: 100% 100%;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+  .pos-init {
+    top: 0px;
+    left: 0px;
+  }
+  .image-div {
+    background-color: transparent;
+    background-position: center;
+  }
+  /* Default classes end */
+  body {
+    margin: 0px 0px;
+    padding: 0px;
+  }
+  .parent-div {
+    position: relative;
+    width: var(--custom-width);
+    height: calc(832 * var(--ratio));
+    overflow: hidden;
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .landing-page-481131 {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    background: #11332dff;
+  }
+  .nodeBg-481161 {
+    object-fit: cover;
+    opacity: 0.03999999910593033;
+  }
+  .top-view-of-fre-481161 {
+    width: 100.08%;
+    height: 100.6%;
+    top: -0.6%;
+    left: -0.08%;
+    opacity: 1;
+    z-index: 3;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .nodeBg-481162 {
+    object-fit: cover;
+    opacity: 0.05000000074505806;
+  }
+  .palm-tree-house-481162 {
+    width: 99.61%;
+    height: 100.48%;
+    top: -0.12%;
+    left: 0.39%;
+    opacity: 1;
+    z-index: 4;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .union-481184 {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .union-481182 {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .nodeBg-481179 {
+    object-fit: cover;
+    opacity: 0.8899999856948853;
+  }
+  .unsplashbn0f4we-481179 {
+    width: 28.62%;
+    height: 70.93%;
+    top: 2.49%;
+    left: -19.06%;
+    opacity: 1;
+    z-index: 16;
+    transform: rotate(57.27deg);
+    overflow: hidden;
+  }
+  
+  
+  
+  /* Navigation Bar Styles */
+  nav {
+    width: 100%;
+    background-color: rgba(10, 23, 9, 0.2); /* Teal green with opacity */
+    height: 52px;
+    border-radius: 115px;
+    display: flex;
+    justify-content: space-between; /* Space between the logo and menu */
+    align-items: center;
+    font-size: 20px;
+    padding: 0 20px; /* Padding on left and right */
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left edge */
+    z-index: 1005; /* Ensure it’s above other content */
+  }
+  
+  /* Logo Heading Styles */
+  .logo-heading {
+    display: flex;
+    align-items: center;
+    margin: 0; /* Reset margins for consistency */
+  }
+  
+  .logo-heading .logo {
+    width: 30px; /* Adjust logo size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between logo and heading */
+  }
+  
+  .logo-heading h1 {
+    font-size: 20px; /* Size of the heading */
+    color: #fff; /* Text color */
+    margin: 0; /* Removes default margin */
+    text-transform: uppercase; /* Optional: Transforms text to uppercase */
+    font-weight: bold; /* Makes text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for emphasis */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  /* Navigation Bar Menu Styles */
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0; /* Centers the navbar menu */
+    padding: 0;
+    gap: 20px;
+    flex: 1; /* Takes up remaining space, allowing centering */
+    justify-content: flex-end; /* Align items to the right */
+    position: relative;
+  }
+  
+  .navbar-menu li {
+    position: relative; /* Position relative for absolute positioning of butterfly */
+    margin-right: 60px;
+  }
+  
+  /* Navigation Link Styles */
+  .navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  /* Butterfly Effect */
+  .navbar-menu li a::after {
+  content: '🪴'; /* White butterfly emoji */
+  position: absolute;
+  font-size: 2em; /* Size of the butterfly */
+  color: #fff; /* White color for the butterfly */
+  opacity: 0; /* Initial transparency */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8); /* Center the emoji and adjust its size */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions for opacity and scaling */
+  }
+  
+  /* Show the butterfly on hover */
+  .navbar-menu li a:hover::after {
+  opacity: 0.7; /* Adjust the opacity for the hover effect */
+  transform: translate(-50%, -50%) scale(1); /* Scale to normal size on hover */
+  }
+  
+  @keyframes sparkle {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
+  }
+  
+  /* Hover Effect on Link */
+  .navbar-menu li a:hover,
+  .navbar-menu li a.active {
+    color: #0fca56; /* Green color for active and hover */
+  }
+  
+  .vector-481152 {
+    width: 73.23%;
+    height: 73.23%;
+    top: 12.5%;
+    left: 12.5%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .menufill0wght40-481153 {
+    width: 35.04%;
+    height: 100%;
+    top: 0%;
+    left: 64.96%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .nodeBg-481154 {
+    opacity: 1;
+    background-image: var(--image-1);
+  }
+  .vector-481154 {
+    width: 75%;
+    height: 50%;
+    top: 25%;
+    left: 12.5%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .frame-100000251-481155 {
+    width: 707.52%;
+    height: 72.22%;
+    top: 13.13%;
+    left: -922.7%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  
+  .nodeBg-481147 {
+    opacity: 1;
+    background-image: var(--image-2);
+  }
+  .vector-1-481147 {
+    width: 8.53%;
+    height: 58.92%;
+    top: 20.51%;
+    left: -0.36%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .frame-100000251-481145 {
+    width: 4.24%;
+    height: 78.79%;
+    top: 10.61%;
+    left: 20.88%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+  .nodeBg-481170 {
+    width: calc(650.0073256546154 * var(--ratio));
+    height: calc(433.6715524094942 * var(--ratio));
+    left: calc(-4.307135036031543e-12 * var(--ratio));
+    top: calc(-114.56052347234585 * var(--ratio));
+  
+    object-fit: cover;
+    opacity: 0.800000011920929;
+  }
+  .close-up-plant--481170 {
+    width: 40.08%;
+    height: 20.83%;
+    top: 11.42%;
+    left: 76.47%;
+    opacity: 1;
+    z-index: 12;
+    transform: rotate(-23.84deg) scaleX(-1);
+    overflow: hidden;
+  }
+  .frame-100000256-481171 {
+    width: 75.86%;
+    height: 47.12%;
+    top: 20.19%;
+    left: 21.25%;
+    opacity: 1;
+    z-index: 13;
+    transform: rotate(0deg);
+  }
+  .your-fields-dig-481172 {
+    width: 100%;
+    height: 49.49%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  .your-fields-dig-481172-0 {
+    font-size: calc(79 * var(--ratio));
+  
+    line-height: calc(80 * var(--ratio));
+  
+    font-family: Inter;
+    font-weight: 700;
+  
+    text-decoration: none;
+    text-transform: none;
+    white-space: pre-wrap;
+    color: #ffffffff;
+  }
+  
+  .where-technolog-481173 {
+    width: 42.74%;
+    height: 24.49%;
+    top: 55.87%;
+    left: 2.16%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  .where-technolog-481173-0 {
+    font-size: calc(19 * var(--ratio));
+  
+    line-height: calc(20 * var(--ratio));
+  
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+  
+    text-decoration: none;
+    text-transform: none;
+    white-space: pre-wrap;
+    color: #ffffffff;
+  }
+  .nodeBg-481163 {
+    width: calc(991.4283334756207 * var(--ratio));
+    height: calc(646.9663994081789 * var(--ratio));
+    left: calc(0 * var(--ratio));
+    top: calc(-60.77186503292794 * var(--ratio));
+  
+    object-fit: cover;
+    opacity: 1;
+  }
+  .indoor-plant-te-481163 {
+    width: 40.63%;
+    height: 70.31%;
+    top: 43.51%;
+    left: -9.77%;
+    opacity: 1;
+    z-index: 5;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .nodeBg-481164 {
+    object-fit: cover;
+    opacity: 0.8999999761581421;
+  }
+  .monstera-delici-481164 {
+    width: 43.83%;
+    height: 74.88%;
+    top: 47.6%;
+    left: 57.11%;
+    opacity: 1;
+    z-index: 6;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .nodeBg-481174 {
+    width: calc(731.3516818380734 * var(--ratio));
+    height: calc(508.405418093649 * var(--ratio));
+    left: calc(-133.9935497654981 * var(--ratio));
+    top: calc(-37.291477972777216 * var(--ratio));
+  
+    object-fit: cover;
+    opacity: 1;
+  }
+  .unsplashmezywrc-481174 {
+    width: 19.3%;
+    height: 31.73%;
+    top: 59.62%;
+    left: 8.91%;
+    opacity: 1;
+    z-index: 14;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .nodeBg-481169 {
+    object-fit: cover;
+    opacity: 0.8999999761581421;
+  }
+  .still-life-with-481169 {
+    width: 7.81%;
+    height: 25.48%;
+    top: 59.62%;
+    left: 93.83%;
+    opacity: 1;
+    z-index: 11;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .nodeBg-481167 {
+    width: calc(416.3974915898738 * var(--ratio));
+    height: calc(262 * var(--ratio));
+    left: calc(-0.09159985811271752 * var(--ratio));
+    top: calc(0 * var(--ratio));
+  
+    object-fit: cover;
+    opacity: 0.8999999761581421;
+  }
+  .decorative-plan-481167 {
+    width: 13.36%;
+    height: 31.37%;
+    top: 69.35%;
+    left: 88.91%;
+    opacity: 1;
+    z-index: 9;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .nodeBg-481168 {
+    object-fit: cover;
+    opacity: 1;
+  }
+  .snake-plant-in--481168 {
+    width: 12.42%;
+    height: 28.61%;
+    top: 76.32%;
+    left: 68.13%;
+    opacity: 1;
+    z-index: 10;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .nodeBg-481166 {
+    object-fit: cover;
+    opacity: 0.8999999761581421;
+  }
+  .green-leaves-cl-481166 {
+    width: 16.33%;
+    height: 17.31%;
+    top: 76.44%;
+    left: 80.55%;
+    opacity: 1;
+    z-index: 8;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .nodeBg-481165 {
+    width: calc(198 * var(--ratio));
+    height: calc(296.5000143953821 * var(--ratio));
+    left: calc(0 * var(--ratio));
+    top: calc(-200.2500158349203 * var(--ratio));
+  
+    object-fit: cover;
+    opacity: 0.8999999761581421;
+  }
+  .hanging-pothos--481165 {
+    width: 15.39%;
+    height: 9.38%;
+    top: 90.63%;
+    left: 82.66%;
+    opacity: 1;
+    z-index: 7;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  .group-15-481175 {
+    width: 12.79%;
+    height: 12.14%;
+    top: 96.39%;
+    left: 42.19%;
+    opacity: 0;
+    z-index: 15;
+    transform: rotate(0deg);
+  }
+  .nodeBg-481176 {
+    object-fit: cover;
+    opacity: 1;
+  }
+  .unsplashjafidtn-481176 {
+    width: 84.82%;
+    height: 60.24%;
+    top: 7.36%;
+    left: 2.24%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(6.38deg);
+    overflow: hidden;
+  }
+  .frame-100000255-481177 {
+    width: 87.31%;
+    height: 37.66%;
+    top: 62.34%;
+    left: 12.69%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 53px 53px 53px 53px;
+    background: #92ce00ff;
+  }
+  .learn-more-481178 {
+    width: 76.97%;
+    height: 84.12%;
+    top: 7.94%;
+    left: 11.51%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    text-align: center;
+    line-height: 0px;
+  }
+  .learn-more-481178-0 {
+    font-size: calc(19 * var(--ratio));
+  
+    line-height: calc(32.00000047683716 * var(--ratio));
+  
+    font-family: Inter;
+    font-weight: 600;
+  
+    text-decoration: none;
+    text-transform: none;
+    white-space: pre-wrap;
+    color: #003c3cff;
+  }
+  

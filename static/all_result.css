@@ -1,0 +1,36 @@
+.prediction-result {
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 100px;
+    
+}
+.heading{
+    text-align: center;
+    color: wheat;
+    margin-top: 200px;
+    
+    font-weight: 800;
+}
+.prediction-result p {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+.prediction-result p::before {
+    content: " ";
+    font-size: 1.2em;
+}
+
+.prediction-result:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}

@@ -1,0 +1,177 @@
+
+
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+  
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}" />
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='animation.css') }}" /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+  <body>
+    <div class="parent-div">
+      <div class="landing-page-481131 pos-abs">
+        <div class="top-view-of-fre-481161 pos-abs">
+          <img
+            src="{{ url_for('static', filename='dashboard/image0.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-481161"
+            alt="Top view of fresh sage plant Image"
+          />
+        </div>
+        <div class="palm-tree-house-481162 pos-abs">
+          <img
+            src="{{ url_for('static', filename='dashboard/image1.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-481162"
+            alt="Palm tree house plant in a pot Image"
+          />
+        </div>
+        <div class="union-481184 pos-abs">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F16-sep-2024%2Ftriptigupta1726484157490%2Fimage-481-184.png?alt=media&token=0"
+            class="pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div object-fit"
+            alt="Union Image"
+          />
+        </div>
+        <div class="union-481182 pos-abs">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F16-sep-2024%2Ftriptigupta1726484157490%2Fimage-481-182.png?alt=media&token=0"
+            class="pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div object-fit"
+            alt="Union Image"
+          />
+        </div>
+        <div class="unsplashbn0f4we-481179 pos-abs">
+          <img
+            src="{{ url_for('static', filename='dashboard/image4.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-481179"
+            alt="unsplash Image"
+          />
+        </div>
+        <!-- Navigation Bar -->
+        <header>
+          <nav>
+            <!-- Logo and Heading -->
+            <div class="logo-heading">
+              <img src="{{ url_for('static', filename='plant.png') }}" alt="Crop Vision Logo" class="logo">
+              <h1>Krishi Mitra</h1>
+            </div>
+
+            <!-- Navigation Bar Menu -->
+            <ul class="navbar-menu">
+              <li><a href="{{ url_for('dashboard') }}" class="active">Home</a></li>
+              <li><a href="{{ url_for('crop_recommend') }}" >Crop</a></li>
+              <li><a href="{{ url_for('ferti_suggest') }}" >Fertilizer</a></li>
+              <li><a href="{{ url_for('disease_identify') }}">Disease</a></li>
+              <li><a href="{{ url_for('logout') }}">Logout</a></li>
+          </ul>
+          </nav>
+        </header>
+
+        <div class="close-up-plant--481170 pos-abs">
+          <img
+            src="{{ url_for('static', filename='dashboard/image5.png') }}"
+            class="pos-abs image-div bg-no-repeat bg-crop nodeBg-481170"
+            alt="Close up plant leaves Image"
+          />
+        </div>
+
+        <!-- Main Section -->
+        <section class="frame-100000256-481171 pos-abs">
+          <div class="your-fields-dig-481172 pos-abs">
+            <span class="your-fields-dig-481172-0">Your Field’s Digital Guardian</span>
+          </div>
+          <div class="where-technolog-481173 pos-abs">
+            <span class="where-technolog-481173-0">Where Technology Meets Nature for a Greener Tomorrow and Effortlessly Detect and Address Plant Health Issues to Ensure Stronger, More Productive Crops.</span>
+          </div>
+        </section>
+
+        <!-- Additional Plant Images -->
+        <div class="indoor-plant-te-481163 pos-abs">
+          <img
+            src="{{ url_for('static', filename='dashboard/image6.png') }}"
+            class="pos-abs image-div bg-no-repeat bg-crop nodeBg-481163"
+            alt="Indoor plant textures details Image"
+          />
+        </div>
+        <div class="monstera-delici-481164 pos-abs">
+          <img
+            src="{{ url_for('static', filename='dashboard/image7.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-481164"
+            alt="Monstera deliciosa plant in a pot Image"
+          />
+        </div>
+        <div class="unsplashmezywrc-481174 pos-abs">
+          <img
+            src="{{ url_for('static', filename='dashboard/image8.png') }}"
+            class="pos-abs image-div bg-no-repeat bg-crop nodeBg-481174"
+            alt="unsplash Image"
+          />
+        </div>
+        <div class="still-life-with-481169 pos-abs">
+          <img
+            src="{{ url_for('static', filename='dashboard/image9.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-481169"
+            alt="Still life with cactus plant Image"
+          />
+        </div>
+        <div class="decorative-plan-481167 pos-abs">
+          <img
+            src="{{ url_for('static', filename='dashboard/image10.png') }}"
+            class="pos-abs image-div bg-no-repeat bg-crop nodeBg-481167"
+            alt="Decorative plant with empty frame Image"
+          />
+        </div>
+        <div class="snake-plant-in--481168 pos-abs">
+          <img
+            src="{{ url_for('static', filename='dashboard/image11.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-481168"
+            alt="Snake plant in a beige pot by a wall Image"
+          />
+        </div>
+        <div class="green-leaves-cl-481166 pos-abs">
+          <img
+            src="{{ url_for('static', filename='dashboard/image12.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-481166"
+            alt="Green leaves close-up nature's botanical pattern Image"
+          />
+        </div>
+        <div class="hanging-pothos--481165 pos-abs">
+          <img
+            src="{{ url_for('static', filename='dashboard/image13.png') }}"
+            class="pos-abs image-div bg-no-repeat bg-crop nodeBg-481165"
+            alt="Hanging pothos plant on gray Image"
+          />
+        </div>
+
+        <!-- Learn More Section -->
+        <section class="group-15-481175 pos-abs">
+          <div class="unsplashjafidtn-481176 pos-abs">
+            <img
+              src="{{ url_for('static', filename='dashboard/image14.png') }}"
+              class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-481176"
+              alt="unsplash Image"
+            />
+          </div>
+          <div class="frame-100000255-481177 pos-abs">
+            <div class="learn-more-481178 pos-abs">
+              <span class="learn-more-481178-0">Learn more</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+  </body>
+
+
+{% endblock %}

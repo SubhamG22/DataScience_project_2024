@@ -1,0 +1,597 @@
+{% extends "base.html" %}
+
+{% block title %}Landing{% endblock %}
+
+
+
+
+{% block content %}
+
+
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='landing.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="{{ url_for('static', filename='landing.js') }}" defer></script>
+
+
+<body>
+  <div class="web-scrapper">
+  <canvas class="webgl"></canvas>
+</div>
+  <div class="loading-bar"></div>
+
+  <div class="parent-div">
+    <div class="macbook-air--1-473607 pos-abs">
+        <!-- blur1 -->
+        <section class="blur-473608 pos-abs">
+          <div class="union-473758 pos-abs">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F16-sep-2024%2Ftriptigupta1726483076268%2Fimage-473-758.png?alt=media&token=0"
+              class="pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div object-fit"
+              alt="Union1 Image"
+            />
+          </div>
+        </section>
+        <div class="angel-vine-plan-473723 pos-abs">
+          <img
+          src="{{ url_for('static', filename='images/image1.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-473723"
+            alt="Angel vine plant on light gray background1 Image"
+          />
+        </div>
+        <div class="angel-vine-plan-473724 pos-abs">
+          <img
+          src="{{ url_for('static', filename='images/image1.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-473724"
+            alt="Angel vine plant on light gray background2 Image"
+          />
+        </div>
+        <!-- nav1 -->
+        <header>
+          <nav>
+            <!-- Logo and Heading -->
+            <div class="logo-heading">
+              <img src="{{ url_for('static', filename='images/plant.png') }}" alt="Crop Vision Logo" class="logo"> <!-- Replace with the path to your logo image -->
+              <h1>Krishi Mitra</h1>
+            </div>            
+        
+            <!-- Navigation Bar Menu -->
+            <ul class="navbar-menu">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#03">Crop</a></li>
+              <li><a href="#02">Fertilizer</a></li>
+              <li><a href="#01">Disease</a></li>
+            </ul>            
+          </nav>
+        </header>
+        <div class="closeup-dew-on--473720 pos-abs">
+          <img
+          src="{{ url_for('static', filename='images/image2.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-473720"
+            alt="Close-up dew on bud1 Image"
+          />
+        </div>
+        <!-- Hero Content1 -->
+        <section class="hero-content-473634 pos-abs">
+          <div class="frame-100000254-473635 pos-abs">
+            <div class="plant-the-seeds-473636 pos-abs">
+              <!-- prettier-ignore --><span  class="plant-the-seeds-473636-0 ">Plant the Seeds of Success</span>
+            </div>
+            <div class="frame-100000254-473637 pos-abs">
+              <div class="frame-100000254-473638 pos-abs">
+                <div class="potted-tree-on--473642 pos-abs">
+                  <img
+                  src="{{ url_for('static', filename='images/image3.png') }}"
+                    class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-473642"
+                    alt="Potted tree on wooden surface1 Image"
+                  />
+                </div>
+                <div class="frame-100000254-473639 pos-abs">
+                  <div class="scan-diagnose-o-473640 pos-abs">
+                    <!-- prettier-ignore --><span  class="scan-diagnose-o-473640-0 ">Scan. Diagnose. Optimize.</span>
+                  </div>
+                </div>
+                <div class="unleash-the-ful-473641 pos-abs">
+                  <!-- prettier-ignore --><span  class="unleash-the-ful-473641-0 ">Unleash the full potential of your farm with Crop Vision. Our AI-driven platform lets you instantly identify plant diseases, get tailored fertilizer suggestions, and discover the best crops for your unique conditions. Step into the future of farming—where every scan brings you one step closer to perfection.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-100000255-473643 pos-abs">
+            <div class="learn-more-473644 pos-abs">
+              <a href="{{ url_for('login') }}" class="learn-more-link">
+                <span class="learn-more-473644-0">Get Started</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="unsplashymjnpfg-473742 pos-abs">
+          <img
+          src="{{ url_for('static', filename='images/image4.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-473742"
+            alt="unsplash:YmJnpFG46fQ1 Image"
+          />
+        </div>
+        <div class="ellipse-17-473633 pos-abs"></div>
+        <div class="unsplash6fbonev-473725 pos-abs">
+          <img
+          src="{{ url_for('static', filename='images/image5.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-473725"
+            alt="unsplash:6FbOnEVmBMQ1 Image"
+          />
+        </div>
+        <!-- 1st section1 -->
+        <section class="c-1st-section-473726 pos-abs">
+          <div class="c-01-473727 pos-abs" id="01">
+            <!-- prettier-ignore --><span  class="c-01-473727-0 ">01</span>
+          </div>
+          <div class="frame-100000252-473728 pos-abs">
+            <div class="instant-plant-h-473729 pos-abs">
+              <!-- prettier-ignore --><span  class="instant-plant-h-473729-0 ">Instant Plant Health Check</span>
+            </div>
+            <div class="just-scan-your--473730 pos-abs">
+              <!-- prettier-ignore --><span  class="just-scan-your--473730-0 ">Just scan your plants with your phone to spot any early signs of disease. Crop Vision helps you catch problems quickly, so you can fix them before they get worse. Keep your crops healthy and your harvest strong with fast, simple checks.</span>
+            </div>
+          </div>
+        </section>
+        <div class="elegant-eucalyp-473743 pos-abs">
+          <img
+          src="{{ url_for('static', filename='images/image6.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-473743"
+            alt="Elegant eucalyptus background1 Image"
+          />
+        </div>
+        <div class="group-of-tropic-473721 pos-abs">
+          <img
+          src="{{ url_for('static', filename='images/image7.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-473721"
+            alt="Group of tropical green leaves1 Image"
+          />
+        </div>
+        <!-- 2nd section1 -->
+        <section class="c-2nd-section-473731 pos-abs">
+          <div class="c-02-473732 pos-abs" id="02">
+            <!-- prettier-ignore --><span  class="c-02-473732-0 ">02</span>
+          </div>
+          <div class="frame-100000252-473733 pos-abs">
+            <div class="get-the-right-n-473734 pos-abs">
+              <!-- prettier-ignore --><span  class="get-the-right-n-473734-0 ">Get the Right Nutrients</span>
+            </div>
+            <div class="get-personalize-473735 pos-abs">
+              <!-- prettier-ignore --><span  class="get-personalize-473735-0 ">Get personalized fertilizer tips based on your crop’s specific needs. Crop Vision recommends the best nutrients to help your plants grow strong and produce more. Ensure your crops get the right boost for a healthy, productive harvest.</span>
+            </div>
+          </div>
+        </section>
+        <!-- 3rd section1 -->
+        <section class="c-3rd-section-473736 pos-abs">
+          <div class="c-03-473737 pos-abs" id="03">
+            <!-- prettier-ignore --><span  class="c-03-473737-0">03</span>
+          </div>
+          <div class="frame-100000252-473738 pos-abs">
+            <div class="grow-the-best-c-473739 pos-abs">
+              <!-- prettier-ignore --><span  class="grow-the-best-c-473739-0 ">Grow the Best Crops for Your Land</span>
+            </div>
+            <div class="find-out-which--473740 pos-abs">
+              <!-- prettier-ignore --><span  class="find-out-which--473740-0 ">Find out which crops will grow best in your soil and climate. Crop Vision analyzes your farm’s conditions to suggest the most suitable crops. This helps you choose plants that will thrive and give you the highest yield.</span>
+            </div>
+          </div>
+        </section>
+        <div class="rectangle-34625-473632 pos-abs">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F16-sep-2024%2Ftriptigupta1726483076268%2Fimage-473-632.png?alt=media&token=0"
+            class="pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div object-fit"
+            alt="Rectangle 346252481 Image"
+          />
+        </div>
+        <div class="arbor-day-celeb-473744 pos-abs">
+          <img
+            src="{{ url_for('static', filename='images/image9.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-473744"
+            alt="Arbor day celebration with potted tree1 Image"
+          />
+        </div>
+        <!-- Pre-footer1 -->
+        <section class="prefooter-473645 pos-abs">
+          <div class="frame-100000252-473646 pos-abs">
+            <div class="ready-to-transf-473647 pos-abs">
+              <!-- prettier-ignore --><span  class="ready-to-transf-473647-0 ">Ready to Transform Your Farming?</span>
+            </div>
+            <div class="discover-how-cr-473648 pos-abs">
+              <!-- prettier-ignore --><span  class="discover-how-cr-473648-0 ">Discover how Crop Vision can simplify your farming routine and boost your harvest. Join our community of forward-thinking farmers and take the first step toward a more productive and successful farm.</span>
+            </div>
+          </div>
+          <div class="frame-100000255-473649 pos-abs">
+
+            <!-- <div class="learn-more-473644 pos-abs">
+                <a href="{{ url_for('login') }}" class="learn-more-link">
+                  <span class="learn-more-473644-0">Get Started</span>
+                </a>
+              </div> -->
+              
+
+
+            <div class="learn-more-473650 pos-abs">
+                <a href="{{ url_for('login') }}" class="learn-more-link">
+              <span  class="learn-more-473650-0 ">Get Started</span>
+                </a>
+            </div>
+          </div>
+        </section>
+        <div class="c-3d-green-palm-l-473719 pos-abs">
+          <img
+          src="{{ url_for('static', filename='images/image10.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-473719"
+            alt="3d green palm leaves arrangement1 Image"
+          />
+        </div>
+        <div class="closeup-leaves--473722 pos-abs">
+          <img
+          src="{{ url_for('static', filename='images/image11.png') }}"
+            class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-473722"
+            alt="Close-up leaves of alocasia1 Image"
+          />
+        </div>
+        <div class="ellipse-16-473741 pos-abs"></div>
+        <!-- logo1 -->
+        <section class="logo-473651 pos-abs">
+          <div class="crop-vision-473653 pos-abs">
+            <!-- prettier-ignore --><span  class="crop-vision-473653-0 ">Krishi Mitra</span>
+          </div>
+          <div class="vector-1-473652 pos-abs">
+            <div
+              class="nodeBg-473652 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+            ></div>
+          </div>
+        </section>
+        <!-- Frame 10000025581 -->
+        <section class="frame-100000255-473654 pos-abs">
+          <div class="frame-100000255-473655 pos-abs">
+            <div class="frame-100000251-473656 pos-abs"></div>
+            <div class="supporting-text-473657 pos-abs">
+              <!-- prettier-ignore --><span  class="supporting-text-473657-0 ">Explore our resources and see how Crop Vision can transform your farm into a model of success.</span>
+            </div>
+          </div>
+          <div class="frame-100000255-473658 pos-abs">
+            <div class="footer-links-co-473659 pos-abs">
+              <div class="heading-473660 pos-abs">
+                <!-- prettier-ignore --><span  class="heading-473660-0 ">Company</span>
+              </div>
+              <div class="footer-links-473661 pos-abs">
+                <div class="footer-link-473662 pos-abs">
+                  <div class="button-473663 pos-abs">
+                    <div class="button-base-473664 pos-abs">
+                      <div class="text-473665 pos-abs">
+                        <!-- prettier-ignore --><span  class="text-473665-0 ">About Us</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473666 pos-abs">
+                  <div class="button-473667 pos-abs">
+                    <div class="button-base-473668 pos-abs">
+                      <div class="text-473669 pos-abs">
+                        <!-- prettier-ignore --><span  class="text-473669-0 ">Careers</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473674 pos-abs">
+                  <div class="button-I473674_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473674_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473674_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473674_1507253519_104235615_10546972-0 ">Press</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473670 pos-abs">
+                  <div class="button-473671 pos-abs">
+                    <div class="button-base-473672 pos-abs">
+                      <div class="text-473673 pos-abs">
+                        <!-- prettier-ignore --><span  class="text-473673-0 ">Contact</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473675 pos-abs">
+                  <div class="button-I473675_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473675_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473675_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473675_1507253519_104235615_10546972-0 ">Media kit</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473676 pos-abs">
+                  <div class="button-I473676_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473676_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473676_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473676_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473677 pos-abs">
+                  <div class="button-I473677_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473677_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473677_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473677_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473678 pos-abs">
+                  <div class="button-I473678_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473678_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473678_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473678_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473679 pos-abs">
+                  <div class="button-I473679_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473679_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473679_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473679_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473680 pos-abs">
+                  <div class="button-I473680_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473680_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473680_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473680_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-links-co-473681 pos-abs">
+              <div class="heading-473682 pos-abs">
+                <!-- prettier-ignore --><span  class="heading-473682-0 ">Resources</span>
+              </div>
+              <div class="footer-links-473683 pos-abs">
+                <div class="footer-link-473684 pos-abs">
+                  <div class="button-473685 pos-abs">
+                    <div class="button-base-473686 pos-abs">
+                      <div class="text-473687 pos-abs">
+                        <!-- prettier-ignore --><span  class="text-473687-0 ">Newsletter</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473688 pos-abs">
+                  <div class="button-473689 pos-abs">
+                    <div class="button-base-473690 pos-abs">
+                      <div class="text-473691 pos-abs">
+                        <!-- prettier-ignore --><span  class="text-473691-0 ">E-book</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473692 pos-abs">
+                  <div class="button-473693 pos-abs">
+                    <div class="button-base-I473693_104235615 pos-abs">
+                      <div class="text-I473693_104235615_10546972 pos-abs">
+                        <!-- prettier-ignore --><span  class="text-I473693_104235615_10546972-0 ">Events</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473694 pos-abs">
+                  <div class="button-473695 pos-abs">
+                    <div class="button-base-I473695_104235615 pos-abs">
+                      <div class="text-I473695_104235615_10546972 pos-abs">
+                        <!-- prettier-ignore --><span  class="text-I473695_104235615_10546972-0 ">Tutorials</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473696 pos-abs">
+                  <div class="button-I473696_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473696_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473696_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473696_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473697 pos-abs">
+                  <div class="button-I473697_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473697_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473697_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473697_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473698 pos-abs">
+                  <div class="button-I473698_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473698_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473698_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473698_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473699 pos-abs">
+                  <div class="button-I473699_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473699_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473699_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473699_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473700 pos-abs">
+                  <div class="button-I473700_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473700_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473700_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473700_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-links-co-473701 pos-abs">
+              <div class="heading-473702 pos-abs">
+                <!-- prettier-ignore --><span  class="heading-473702-0 ">Legal</span>
+              </div>
+              <div class="footer-links-473703 pos-abs">
+                <div class="footer-link-473704 pos-abs">
+                  <div class="button-473705 pos-abs">
+                    <div class="button-base-473706 pos-abs">
+                      <div class="text-473707 pos-abs">
+                        <!-- prettier-ignore --><span  class="text-473707-0 ">Press</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-473708 pos-abs">
+                  <div class="button-base-473709 pos-abs">
+                    <div class="text-473710 pos-abs">
+                      <!-- prettier-ignore --><span  class="text-473710-0 ">Privacy</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-473711 pos-abs">
+                  <div class="button-base-473712 pos-abs">
+                    <div class="text-473713 pos-abs">
+                      <!-- prettier-ignore --><span  class="text-473713-0 ">Contact</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473714 pos-abs">
+                  <div class="button-I473714_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473714_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473714_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473714_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473715 pos-abs">
+                  <div class="button-I473715_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473715_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473715_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473715_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473716 pos-abs">
+                  <div class="button-I473716_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473716_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473716_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473716_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473717 pos-abs">
+                  <div class="button-I473717_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473717_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473717_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473717_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-link-473718 pos-abs">
+                  <div class="button-I473718_1507253519 pos-abs">
+                    <div
+                      class="button-base-I473718_1507253519_104235615 pos-abs"
+                    >
+                      <div
+                        class="text-I473718_1507253519_104235615_10546972 pos-abs"
+                      >
+                        <!-- prettier-ignore --><span  class="text-I473718_1507253519_104235615_10546972-0 ">Additional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='landing.js') }}"></script>
+  </body>
+
+{% endblock %}

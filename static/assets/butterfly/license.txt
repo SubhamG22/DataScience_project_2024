@@ -1,0 +1,11 @@
+Model Information:
+* title:	Butterfly - Blend, FBX file
+* source:	https://sketchfab.com/3d-models/butterfly-blend-fbx-file-cd8e96659de94fa79c9e6ea1a191c853
+* author:	ngocvu13120 (https://sketchfab.com/ngocvu13120)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Butterfly - Blend, FBX file" (https://sketchfab.com/3d-models/butterfly-blend-fbx-file-cd8e96659de94fa79c9e6ea1a191c853) by ngocvu13120 (https://sketchfab.com/ngocvu13120) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

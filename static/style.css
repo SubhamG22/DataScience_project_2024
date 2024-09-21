@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../static/background-img.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.site-heading {
+    color: black;
+    font-size: 48px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.flash-message-container {
+    position: fixed;
+    top: 60px; /* Adjust based on the height of your navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050; /* High z-index to ensure it appears above other content */
+    width: 90%; /* Adjust the width as needed */
+    max-width: 600px; /* Optional: Set a max width for better responsiveness */
+}
+
+.custom-close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000; /* Adjust color as needed */
+    cursor: pointer;
+    line-height: 1;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    opacity: 0.8;
+}
+
+.custom-close-btn:hover {
+    color: #ff0000; /* Change color on hover if desired */
+    opacity: 1;
+}

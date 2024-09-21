@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+
+
+{%block content%}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='all_result.css') }}">
+
+{% if prediction %}
+<div class="prediction-result">
+    <p>{{ prediction }}</p>
+</div>
+{% endif %}
+{% endblock %}
